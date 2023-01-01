@@ -2,6 +2,7 @@ import React from "react";
 
 const Experience = ({exps}) => (
     <div className="experiences">
+      <h2>Experience</h2>
       {exps.map(exp => {
         return(
           <div className="exp">

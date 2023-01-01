@@ -58,7 +58,7 @@ const ResumePage = () => {
       name: 'AWS Certified Cloud Practitioner	(CLF-C01)',
       issuedDate: "Dec 27, 2022",
       validation: "# Y0CZ0932YN41Q93H",
-      image: './aws-certified-cloud-practitioner.png'
+      image: 'public/aws-certified-cloud-practitioner.png'
     }
   ]
 
