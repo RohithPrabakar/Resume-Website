@@ -1,7 +1,7 @@
 import React from "react";
 
 const Experience = ({exps}) => (
-    <div className="experiences">
+    <div className="section">
       <h2>Experience</h2>
       {exps.map(exp => {
         return(

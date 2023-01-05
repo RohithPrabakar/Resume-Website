@@ -1,0 +1,76 @@
+body{
+  background-color: rgb(233, 233, 233);
+  margin: 0;
+}
+
+:root {
+  --primary-light: white;
+  --primary-dark:#222;
+}
+.resume-page {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.resume-page.light {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+  
+.resume-page.dark {
+  background-color: #222;
+  color: white;
+}
+
+.section h1 {
+  color: inherit;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.resume-page h2 {
+  color: inherit;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.resume-page h3 {
+  color: inherit;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.resume-page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-page button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  position: relative;
+  display: inline;
+}
+
+.resume-page.dark button{
+  color:#222;
+  background-color: white;
+}
+
+.resume-page.light button{
+  color:white;
+  background-color: #222;
+}
+
+.resume-page button:hover {
+  background-color: #666;
+}

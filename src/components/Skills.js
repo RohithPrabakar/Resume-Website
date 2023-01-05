@@ -1,7 +1,7 @@
 import React from "react";
 
 const Skills = ({skills}) => (
-    <div className="skills">
+    <div className="section">
         <h2>Skills</h2>
         {skills.map(skill => {
             return(

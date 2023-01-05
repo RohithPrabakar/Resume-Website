@@ -1,6 +1,5 @@
-import ResumePage from './components/ResumePage';
+import ResumePage from './ResumePage';
 import React from 'react';
-import './App.css';
 
 function App() {
   return (

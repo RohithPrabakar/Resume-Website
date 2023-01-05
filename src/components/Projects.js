@@ -1,7 +1,7 @@
 import React from "react";
 
 const Projects = ({projects}) => (
-    <div className="projects">
+    <div className="section">
         <h2>Projects</h2>
         {projects.map(project => {
             return(

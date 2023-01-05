@@ -1,6 +1,6 @@
 import React from "react";
 const Education = ({educ}) => (
-    <div className="educations">
+    <div className="section">
       <h2>Education</h2>
       {educ.map(edu => {
         return(

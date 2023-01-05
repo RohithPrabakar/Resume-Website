@@ -1,5 +1,5 @@
 import React from 'react';
-import '../ResumePage.css';
+import '../Styles/ResumePage.css';
 import PersonalInformation from './PersonalInformation';
 import Experience from './Experience';
 import Education from './Education';
@@ -58,7 +58,7 @@ const ResumePage = () => {
       name: 'AWS Certified Cloud Practitioner	(CLF-C01)',
       issuedDate: "Dec 27, 2022",
       validation: "# Y0CZ0932YN41Q93H",
-      image: 'public/aws-certified-cloud-practitioner.png'
+      image: '../Images/aws-certified-cloud-practitioner.png'
     }
   ]
 
@@ -89,7 +89,7 @@ const ResumePage = () => {
       college: 'Farmingdale State College, Farmingdale, NY',
       graduationDate: 'Expected Graduation Date: May 2023',
       coursework: ['UNIX Operating Systems', 'Data Communications & Network', 'Advanced Networking', 'Data Structures'],
-      honors: ['President’s List, 2021',  'Dean’s List, 2022', 'Cum Laude (3.67/4.0 GPA']
+      honors: ['President’s List, 2021',  'Dean’s List, 2022', 'Cum Laude (3.67/4.0 GPA)']
     }
   ]
 
@@ -100,7 +100,7 @@ const ResumePage = () => {
         name={personal_info.name}
         email={personal_info.email}
         github={personal_info.github}
-        linkedin={personal_info.linkedin}    
+        linkedin={personal_info.linkedin}  
     />
     <Tagline
     content = {tagline}
@@ -120,6 +120,7 @@ const ResumePage = () => {
     <Education 
       educ = {education}
     />
+    <h1>{isDarkMode}</h1>
   </div>
   )};
 
