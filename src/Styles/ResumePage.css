@@ -1,11 +1,14 @@
-body{
-  background-color: rgb(233, 233, 233);
-  margin: 0;
+.light {
+  --color: #222;
+  --bg-color:white;
 }
-
-:root {
-  --primary-light: white;
-  --primary-dark:#222;
+.dark {
+  --color: white;
+  --bg-color:#222;
+}
+body {
+  background-color: #333;
+  margin: 0;
 }
 .resume-page {
   font-family: Arial, sans-serif;
@@ -15,18 +18,10 @@ body{
   max-width: 800px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--color);
+  background-color: var(--bg-color);
 }
   
-.resume-page.light {
-  background-color: var(--primary-light);
-  color: var(--primary-dark);
-}
-  
-.resume-page.dark {
-  background-color: #222;
-  color: white;
-}
-
 .section h1 {
   color: inherit;
   font-size: 24px;
@@ -57,8 +52,22 @@ body{
   cursor: pointer;
   font-size: 14px;
   padding: 10px 20px;
-  position: relative;
-  display: inline;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .resume-page button {
+    top: 10px;
+    right: 10px;
+    font-size: 8px;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
 }
 
 .resume-page.dark button{
@@ -73,4 +82,124 @@ body{
 
 .resume-page button:hover {
   background-color: #666;
+}
+
+.section{
+  padding: 10px 0;
+}
+
+/*PersonalInformation*/
+
+.PersonalInformation {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: inline;
+}
+
+.PersonalInformation h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.PersonalInformation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.PersonalInformation li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.PersonalInformation li::before {
+content: "|";
+margin: 0 10px;
+}
+
+.PersonalInformation li:first-child::before {
+content: "";
+margin: 0;
+}
+
+.link a {
+text-decoration: none;
+color: #0077c9;
+}
+
+.link a:hover {
+color: #55acee;
+}
+
+/*Tagline*/
+
+.tagline {
+  text-align: justify;
+}
+
+.tagline p {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color);
+}
+
+/*Project*/
+
+.project-list p {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color);
+}
+
+.project-list ul {
+  list-style-type: disc;
+  margin: 10px;
+}
+
+.project-list li {
+  padding: 5px;
+}
+
+/*certificate*/
+.certification .item{
+  display: block;
+}
+
+.certification .left{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+}
+.certification img{
+  width: 120px;
+}
+
+.certification .right{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+/*exp*/
+.exp p {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color);
+}
+
+.exp ul {
+  list-style-type: disc;
+  margin: 10px;
+}
+
+.exp li {
+  padding: 5px;
+}
+
+/*education*/
+.education .highlight {
+  font-style: italic;
+  font-weight: bold;
 }

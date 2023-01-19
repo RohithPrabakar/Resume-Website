@@ -87,7 +87,7 @@ const ResumePage = () => {
     {
       degree: 'Bachelor of Science in Computer Engineering Tech',
       college: 'Farmingdale State College, Farmingdale, NY',
-      graduationDate: 'Expected Graduation Date: May 2023',
+      graduationDate: 'May 2023',
       coursework: ['UNIX Operating Systems', 'Data Communications & Network', 'Advanced Networking', 'Data Structures'],
       honors: ['President’s List, 2021',  'Dean’s List, 2022', 'Cum Laude (3.67/4.0 GPA)']
     }
@@ -120,7 +120,6 @@ const ResumePage = () => {
     <Education 
       educ = {education}
     />
-    <h1>{isDarkMode}</h1>
   </div>
   )};
 

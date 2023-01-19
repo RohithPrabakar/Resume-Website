@@ -1,7 +1,7 @@
 import React from "react";
 import '../Styles/PersonalInformation.css';
 const PersonalInformation = (props) => (
-    <div className="secion PersonalInformation">
+    <div className="section PersonalInformation link">
       <h1>{props.name}</h1>
       <ul>
         <li><a href="\">{props.email}</a></li>
