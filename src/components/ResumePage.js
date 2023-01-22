@@ -19,7 +19,7 @@ const ResumePage = () => {
     name:"Rohith Prabakar",
     email:"prohith02@gmail.com",
     github:"https://github.com/RohithPrabakar",
-    linkedin:"www.linkedin.com/in/prohith02" 
+    linkedin:"https://linkedin.com/in/prohith02" 
   }
   
   const tagline = "Passionate Computer Engineering student (3.67 GPA) with experience working with computer networking and skilled in programming and deploying web application on AWS platform. Seeking to use proven skills in JavaScript and AWS services to effectively serve your company."
