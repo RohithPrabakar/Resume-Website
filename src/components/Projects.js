@@ -10,13 +10,21 @@ const Projects = ({projects}) => (
                     <p>{project.description}</p>
                     <ul>
                         {project.details.map((detail, index) => {
-                            return detail.includes('GitHub repository') ? (
-                                <li key={index}>
+                            if(detail.includes('GitHub repository')){
+                                return (<li key={index}>
                                     <a href={project.github_link}>{detail}</a>
+                                </li>)
+                            }
+                            else if (detail.includes('Design Narrative')){
+                                return(
+                                    <li key={index}>
+                                    <a href={project.devto_link}>{detail}</a>
                                 </li>
-                            ) : (
-                                <li key={index}>{detail}</li>
-                            );
+                                )
+                            }
+                            else {
+                                return(<li key={index}>{detail}</li>)
+                            }
                         })}
                     </ul>
                 </div>
