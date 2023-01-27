@@ -7,6 +7,7 @@ const PersonalInformation = (props) => (
         <li><a href="\">{props.email}</a></li>
         <li><a href={props.github}>GitHub </a></li>
         <li><a href={props.linkedin}>LinkdIn</a></li>
+        <li><a href={props.blog}>Blog</a></li>
       </ul>
     </div>
   );

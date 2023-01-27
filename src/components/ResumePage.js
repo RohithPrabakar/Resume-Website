@@ -19,12 +19,20 @@ const ResumePage = () => {
     name:"Rohith Prabakar",
     email:"prohith02@gmail.com",
     github:"https://github.com/RohithPrabakar",
-    linkedin:"https://linkedin.com/in/prohith02" 
+    linkedin:"https://linkedin.com/in/prohith02",
+    blog:"https://dev.to/rohithprabakar" 
   }
   
   const tagline = "Passionate Computer Engineering student (3.67 GPA) with experience working with computer networking and skilled in programming and deploying web application on AWS platform. Seeking to use proven skills in JavaScript and AWS services to effectively serve your company."
 
   const project = [
+  {
+    name: 'Resume Website (This Website)',
+    description: 'AWS-based React project with CI-CD',
+    details:['React build file hosted on S3','Route 53 is used for DNS and Cloud Front CDN',' GitHub repository with Actions for CI/CD automation to upload files in S3',' Design Narrative: Deploy Resume Website in AWS on Dev.to'],
+    github_link:'https://github.com/RohithPrabakar/Cooking-Recipe',
+    devto_link:'https://dev.to/rohithprabakar/design-narrative-deploy-resume-website-in-aws-40i6'
+  },
   {
     name: 'Recipe website',
     description: 'Full stack website with CRUD application',
@@ -36,7 +44,8 @@ const ResumePage = () => {
     description: 'Full stack website with api requests',
     details: ['Uses HTML and CSS for frontend',' Express is used to make calls to the API in RapidAPI', 'GitHub repository to store the code'],
     github_link: 'https://github.com/RohithPrabakar/The-Weather-Project'
-  }]
+  }
+]
 
   const skills = [
     {
@@ -89,7 +98,7 @@ const ResumePage = () => {
       college: 'Farmingdale State College, Farmingdale, NY',
       graduationDate: 'May 2023',
       coursework: ['UNIX Operating Systems', 'Data Communications & Network', 'Advanced Networking', 'Data Structures'],
-      honors: ['President’s List, 2021',  'Dean’s List, 2022', 'Cum Laude (3.67/4.0 GPA)']
+      honors: ['President’s List, 2021',  'Dean’s List, 2022','Dean’s List, 2023', 'Cum Laude (3.67/4.0 GPA)']
     }
   ]
 
@@ -100,7 +109,8 @@ const ResumePage = () => {
         name={personal_info.name}
         email={personal_info.email}
         github={personal_info.github}
-        linkedin={personal_info.linkedin}  
+        linkedin={personal_info.linkedin}
+        blog={personal_info.blog}  
     />
     <Tagline
     content = {tagline}
