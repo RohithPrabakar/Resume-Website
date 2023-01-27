@@ -30,7 +30,7 @@ const ResumePage = () => {
     name: 'Resume Website (This Website)',
     description: 'AWS-based React project with CI-CD',
     details:['React build file hosted on S3','Route 53 is used for DNS and Cloud Front CDN',' GitHub repository with Actions for CI/CD automation to upload files in S3',' Design Narrative: Deploy Resume Website in AWS on Dev.to'],
-    github_link:'https://github.com/RohithPrabakar/Cooking-Recipe',
+    github_link:'https://github.com/RohithPrabakar/Resume-Website',
     devto_link:'https://dev.to/rohithprabakar/design-narrative-deploy-resume-website-in-aws-40i6'
   },
   {
