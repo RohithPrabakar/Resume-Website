@@ -6,7 +6,7 @@ const Projects = ({projects}) => (
         {projects.map((project, index) => {
             return (
                 <div key={index} className="project-list link">
-                    <h3>{project.name}</h3>
+                    <h3><a href={project.website_link}>{project.name}</a></h3>
                     <p>{project.description}</p>
                     <ul>
                         {project.details.map((detail, index) => {

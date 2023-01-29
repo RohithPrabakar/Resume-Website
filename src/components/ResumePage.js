@@ -31,19 +31,22 @@ const ResumePage = () => {
     description: 'AWS-based React project with CI-CD',
     details:['React build file hosted on S3','Route 53 is used for DNS and Cloud Front CDN',' GitHub repository with Actions for CI/CD automation to upload files in S3',' Design Narrative: Deploy Resume Website in AWS on Dev.to'],
     github_link:'https://github.com/RohithPrabakar/Resume-Website',
-    devto_link:'https://dev.to/rohithprabakar/design-narrative-deploy-resume-website-in-aws-40i6'
+    devto_link:'https://dev.to/rohithprabakar/design-narrative-deploy-resume-website-in-aws-40i6',
+    website_link:'https://rohithprabakarresume.com/'
   },
   {
     name: 'Recipe website',
     description: 'Full stack website with CRUD application',
     details: [' Using EJS for front-end and bootstrap framework for styling',' MongoDB, express to make CRUD operations in the application', 'GitHub repository to store the code'],
-    github_link: 'https://github.com/RohithPrabakar/Cooking-Recipe'
+    github_link: 'https://github.com/RohithPrabakar/Cooking-Recipe',
+    website_link:'https://cooking-recipe.onrender.com/'
   },
   {
     name: 'Weather Forecast Website',
     description: 'Full stack website with api requests',
     details: ['Uses HTML and CSS for frontend',' Express is used to make calls to the API in RapidAPI', 'GitHub repository to store the code'],
-    github_link: 'https://github.com/RohithPrabakar/The-Weather-Project'
+    github_link: 'https://github.com/RohithPrabakar/The-Weather-Project',
+    website_link:'https://weather-app-qrqc.onrender.com/'
   }
 ]
 
